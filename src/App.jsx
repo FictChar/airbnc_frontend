@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import { PropertiesFilters } from "./PropertiesFilters";
+import { PropertiesFilters } from "./components/PropertiesFilters";
 import PropertiesGrid from "./components/PropertiesGrid";
-import PropertiesCard from "./components/PropertiesCard";
 import { getProperties } from "../api";
 
 function App() {

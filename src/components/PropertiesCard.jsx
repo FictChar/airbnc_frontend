@@ -1,4 +1,3 @@
-import React from "react";
 import "./PropertiesCard.css"; 
 
 function PropertiesCard({ property }) {

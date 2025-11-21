@@ -5,10 +5,11 @@
 }
 
 .App {
-  background-color: black;
-  border: red 2px solid;
+  background-color: #D0987F;
   width: 100vw;
   height: 100vw;
+  text-align: center;
 
 }
+
 

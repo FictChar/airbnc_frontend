@@ -1,5 +1,5 @@
 .grid-container {
-  border: green 2px solid;
+  background-color: #7B9C95;
   grid-area: grid;
   overflow: scroll;
   display: grid;

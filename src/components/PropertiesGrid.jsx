@@ -1,4 +1,3 @@
-import React from "react";
 import PropertiesCard from "./PropertiesCard";
 import "./PropertiesGrid.css";
 
