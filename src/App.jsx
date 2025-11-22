@@ -7,11 +7,17 @@ import { getProperties } from "../api";
 function App() {
   const [properties, setProperties] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [filters, setFilters] = useState({
+    minPrice: "",
+    maxPrice: "",
+  });
 
   useEffect(() => {
     const fetchProperties = async () => {
+      setLoading(true);
+
       try {
-        const fetched = await getProperties();
+        const fetched = await getProperties(filters);
         setProperties(fetched);
       } catch (err) {
         console.error("Failed to fetch properties:", err);
@@ -20,15 +26,16 @@ function App() {
       }
     };
     fetchProperties();
-  }, []);
+  }, [filters]);
 
   return (
     <div className="App">
       <header className="Title">
         <h1>AirBNC</h1>
+        <h2>Your next adventure starts here</h2>
       </header>
 
-      <PropertiesFilters />
+      <PropertiesFilters filters={filters} setFilters={setFilters} />
 
       {loading ? (
         <p>Loading properties...</p>

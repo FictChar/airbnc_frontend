@@ -1,14 +1,27 @@
-.properties.filter {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 16px;
+.properties-filters {
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #d0987f; 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.properties-filter button {
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
-  display: inline-block;
-  margin: 0 8px;
+.properties-filters select {
+  padding: 8px;
+  border-radius: 20px;
+  border: 2px solid #665648; 
+  background-color: white; 
+  color: #625041;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
+
+.properties-filters select:hover,
+.properties-filters select:focus {
+  border-color: #7b9c95; 
+  background-color: #fff;
+  outline: none;
+}
+

@@ -1,11 +1,10 @@
 .property-card {
   border: 1px solid white;
   background-color: #E8C5A6;
-  padding: 12px;
-  border-radius: 8px;
+  border-radius: 20px;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
 }
 
 .property-card h2 {
-    colour: #625041;
+ color: #625041;
 }

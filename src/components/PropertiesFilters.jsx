@@ -1,12 +1,28 @@
-import "./PropertiesFilter.css"
+import "./PropertiesFilter.css";
 
-export function PropertiesFilters() {
+export function PropertiesFilters({ filters, setFilters }) {
+  const sortOptions = [
+    { value: "minPriceAsc", label: "Min price ↑" },
+    { value: "maxPriceDesc", label: "Max price ↓" },
+  ];
+
+  const handleSortChange = (value) => {
+    setFilters((prev) => ({ ...prev, sort: value }));
+  };
+
   return (
     <div className="properties-filters">
-      <h2>Filter by</h2>
-      <button>Price</button>
-      <button>Reviews</button>
-      <button>Property type</button>
+      <select
+        value={filters.sort || ""}
+        onChange={(e) => handleSortChange(e.target.value)}
+      >
+        <option value="">Sort by</option>
+        {sortOptions.map((opt) => (
+          <option key={opt.value} value={opt.value}>
+            {opt.label}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }
