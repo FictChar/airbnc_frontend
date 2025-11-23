@@ -2,17 +2,12 @@ import PropertiesCard from "./PropertiesCard";
 import "./PropertiesGrid.css";
 
 function PropertiesGrid({ properties }) {
-  if (!properties || properties.length === 0) {
-    return <p>No properties found.</p>;
-  }
+  if (!properties || properties.length === 0) return <p>No properties found.</p>;
 
   return (
-    <div className="grid-container">
+    <div className="properties-grid">
       {properties.map((property) => (
-        <PropertiesCard
-          key={property.property_id}
-          property={property}
-        />
+        <PropertiesCard key={property.id} property={property} />
       ))}
     </div>
   );

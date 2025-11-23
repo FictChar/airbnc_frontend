@@ -7,15 +7,11 @@ import { getProperties } from "../api";
 function App() {
   const [properties, setProperties] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [filters, setFilters] = useState({
-    minPrice: "",
-    maxPrice: "",
-  });
+  const [filters, setFilters] = useState({ minprice: "", maxprice: "" });
 
   useEffect(() => {
     const fetchProperties = async () => {
       setLoading(true);
-
       try {
         const fetched = await getProperties(filters);
         setProperties(fetched);
@@ -40,7 +36,9 @@ function App() {
       {loading ? (
         <p>Loading properties...</p>
       ) : (
-        <PropertiesGrid properties={properties} />
+        <>
+          <PropertiesGrid properties={properties} />
+        </>
       )}
     </div>
   );

@@ -3,8 +3,11 @@
   background-color: #E8C5A6;
   border-radius: 20px;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+  padding: 10 px;
 }
 
-.property-card h2 {
- color: #625041;
+.property-card h3 {
+  color: #625041;
+  margin-bottom: 0.5rem;
 }
+
