@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import { PropertiesFilters } from "./components/PropertiesFilters";
-import PropertiesGrid from "./components/PropertiesGrid";
+import { PropertiesFilters } from "./components/PropertyFilter/PropertiesFilters";
+import PropertiesGrid from "./components/PropertyGrid/PropertiesGrid";
 import { getProperties } from "../api";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <header className="Title">
         <h1>AirBNC</h1>
-        <h2>Your next adventure starts here</h2>
+        <h2>Your next adventure starts here...</h2>
       </header>
 
       <PropertiesFilters filters={filters} setFilters={setFilters} />

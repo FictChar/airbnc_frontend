@@ -1,4 +1,4 @@
-import PropertiesCard from "./PropertiesCard";
+import PropertiesCard from "../PropertyCard/PropertiesCard";
 import "./PropertiesGrid.css";
 
 function PropertiesGrid({ properties }) {

@@ -6,7 +6,7 @@ export function PropertiesFilters({ filters, setFilters }) {
     { value: "maxPriceDesc", label: "Max price ↓" },
   ];
 
-  const handleSortChange = (value) => {
+  const handleSortBy = (value) => {
     setFilters((prev) => ({ ...prev, sort: value }));
   };
 
@@ -14,9 +14,9 @@ export function PropertiesFilters({ filters, setFilters }) {
     <div className="properties-filters">
       <select
         value={filters.sort || ""}
-        onChange={(e) => handleSortChange(e.target.value)}
+        onChange={(e) => handleSortBy(e.target.value)}
       >
-        <option value="">Sort by</option>
+        <option value="">Sort by:</option>
         {sortOptions.map((opt) => (
           <option key={opt.value} value={opt.value}>
             {opt.label}
