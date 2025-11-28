@@ -1,16 +1,76 @@
-# React + Vite
+# AirBNC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AirBNC is a page that allow you to book stays all over the UK. It's a personal project part of the NorthCoders Bootcamp I have completed.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How it works
 
-## React Compiler
+The project is dicided in two parts:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Backend: https://github.com/FictChar/airbnc_project
+Frontend: this repo
 
-## Expanding the ESLint configuration
+The Backend has been hosted in Render: https://airbnc-project.onrender.com
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+And it has the following endpoints available:
+
+GET:
+
+Properties
+
+/api/properties/
+
+/api/properties/:id/
+
+/api/properties/:id/reviews/
+
+/api/properties/?maxprice=<max cost per night>
+
+/api/properties/?minprice=<min cost per night>
+
+/api/properties/?property_type=<property type>
+
+
+Users
+
+/api/users/:id/
+
+
+POST:
+
+/api/properties/:id/reviews/
+
+
+DELETE:
+
+/api/properties/:id/reviews/
+
+
+
+## Pre-requisite
+
+Before you begin, you will need to have the following tools installed on your machine: [Git] (https://git-scm.com), [Node.js] (https://nodejs.org/en/). In addition, it is good to have an editor to work with the code like [VSCode] (https://code.visualstudio.com/)
+
+Once done copy the repository and open it on dev mode npm run dev.
+
+
+## Tech Stack
+
+To build this project I have used the following tools:
+
+React
+React Dom
+Axios
+Vite
+ESlint
+Cors
+
+
+## Roadmap
+
+At the moment the endpoints and features are limited but I will be adding more. In the current roadmap are the following changes:
+
+.Card pages where you can consult each property and see information about them and the host.
+.A contact form.
+.A user area (divided in host and guest).
+.A banner effect that make the page look more modern.
