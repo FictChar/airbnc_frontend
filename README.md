@@ -60,10 +60,12 @@ To build this project I have used the following tools:
 
 React
 React Dom
-Axios
+React router (https://reactrouter.com/start/data/installation)
+React router dom
+Axios (https://axios-http.com/docs/intro)
 Vite
 ESlint
-Cors
+Cors (https://www.npmjs.com/package/cors)
 
 
 ## Roadmap

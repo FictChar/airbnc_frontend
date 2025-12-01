@@ -2,11 +2,10 @@ import axios from "axios";
 
 const BASE_URL = "https://airbnc-project.onrender.com/api/";
 
-export const getProperties = async (filters = {}) => {
+export function getProperties(filters = {}) {
   const params = {};
 
   if (filters.minPrice) params.minprice = filters.minPrice;
-
   if (filters.maxPrice) params.maxprice = filters.maxPrice;
 
   if (filters.sort === "minPriceAsc") {
@@ -19,6 +18,14 @@ export const getProperties = async (filters = {}) => {
     params.order = "desc";
   }
 
-  const { data } = await axios.get(`${BASE_URL}properties`, { params });
-  return data.properties;
-};
+  return axios
+    .get(`${BASE_URL}properties`, { params })
+    .then((res) => res.data.properties);
+}
+
+export function getPropertyById(id) {
+  return axios
+    .get(`${BASE_URL}properties/${id}`)
+    .then((res) => res.data.property);
+}
+
