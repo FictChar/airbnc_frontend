@@ -5,15 +5,14 @@ const BASE_URL = "https://airbnc-project.onrender.com/api/";
 export function getProperties(filters = {}) {
   const params = {};
 
-  if (filters.minPrice) params.minprice = filters.minPrice;
-  if (filters.maxPrice) params.maxprice = filters.maxPrice;
+
+  if (filters.minprice) params.minprice = filters.minprice;
+  if (filters.maxprice) params.maxprice = filters.maxprice;
 
   if (filters.sort === "minPriceAsc") {
     params.sort_by = "price";
     params.order = "asc";
-  }
-
-  if (filters.sort === "maxPriceDesc") {
+  } else if (filters.sort === "maxPriceDesc") {
     params.sort_by = "price";
     params.order = "desc";
   }

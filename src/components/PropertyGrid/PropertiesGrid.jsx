@@ -7,7 +7,7 @@ function PropertiesGrid({ properties }) {
   return (
     <div className="properties-grid">
       {properties.map((property) => (
-        <PropertiesCard key={property.id} property={property} />
+        <PropertiesCard key={property.property_id} property={property} />
       ))}
     </div>
   );

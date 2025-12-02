@@ -1,3 +1,4 @@
+
 import "./PropertiesCard.css"; 
 
 function PropertiesCard({ property }) {
