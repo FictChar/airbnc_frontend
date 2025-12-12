@@ -5,7 +5,7 @@ function PropertiesGrid({ properties }) {
   if (!properties || properties.length === 0) return <p>No properties found.</p>;
 
   return (
-    <div className="properties-grid">
+    <div className="PropertiesGrid">
       {properties.map((property) => (
         <PropertiesCard key={property.property_id} property={property} />
       ))}

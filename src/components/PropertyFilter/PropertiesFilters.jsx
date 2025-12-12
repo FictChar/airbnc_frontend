@@ -11,7 +11,7 @@ export function PropertiesFilters({ filters, setFilters }) {
   };
 
   return (
-    <div className="properties-filters">
+    <div className="PropertiesFilter">
       <select
         value={filters.sort || ""}
         onChange={(e) => handleSortBy(e.target.value)}

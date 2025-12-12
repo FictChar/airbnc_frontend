@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import "./SinglePropertyCard.css"
 
 function SingleProperty({ properties }) {
   const { id } = useParams();
@@ -9,12 +10,13 @@ function SingleProperty({ properties }) {
   if (!property) return <p>Property not found.</p>;
 
   return (
-    <div className="single-property">
+    <div className="SinglePropertyCard">
       <h2>{property.property_name}</h2>
       <p>Location: {property.location}</p>
+      <p>Description: {properties.description}</p>
       <p>Price per night: £{property.price_per_night}</p>
       <p>Host: {property.host}</p>
-    </div>
+     </div>
   );
 }
 

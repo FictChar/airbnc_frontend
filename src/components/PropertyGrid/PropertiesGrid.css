@@ -1,8 +1,8 @@
-.properties-grid {
+.PropertiesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  background-color: #7B9C95;
+  background-color: white;
   padding: 35px;
 
 }

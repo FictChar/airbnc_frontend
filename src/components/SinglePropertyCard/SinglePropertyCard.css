@@ -1,0 +1,35 @@
+.SinglePropertyCard {
+  background-color: #F5F5F5;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.SinglePropertyCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.SinglePropertyCard h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: black;
+}
+
+.SinglePropertyCard p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: black
+}
+
+.not-found {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  margin-top: 50px;
+}

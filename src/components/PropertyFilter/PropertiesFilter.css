@@ -1,4 +1,4 @@
-.properties-filters {
+.PropertiesFilters {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -6,7 +6,7 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.properties-filters select {
+.PropertiesFilters select {
   padding: 8px;
   border-radius: 20px;
   border: 2px solid #665648; 
@@ -17,8 +17,8 @@
   transition: all 0.2s ease-in-out;
 }
 
-.properties-filters select:hover,
-.properties-filters select:focus {
+.PropertiesFilters select:hover,
+.PropertiesFilters select:focus {
   border-color: #7b9c95; 
   background-color: #fff;
   outline: none;

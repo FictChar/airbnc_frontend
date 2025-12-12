@@ -4,7 +4,7 @@ import "./App.css";
 import { PropertiesFilters } from "./components/PropertyFilter/PropertiesFilters";
 import PropertiesGrid from "./components/PropertyGrid/PropertiesGrid";
 import { getProperties } from "../api";
-import SingleProperty from "./components/SingleProperty/SingleProperty";
+import SingleProperty from "./components/SinglePropertyCard/SinglePropertyCard";
 
 function App() {
   const [properties, setProperties] = useState([]);

@@ -1,13 +1,24 @@
-.property-card {
+.PropertyCard {
   border: 1px solid white;
   background-color: #E8C5A6;
-  border-radius: 20px;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
-  padding: 10 px;
+  padding: 16px;
+  border-radius: 8px;
+  height: 100%;
+  box-sizing: border-box;
+}
 }
 
-.property-card h3 {
+.PropertyCard h3 {
   color: #625041;
   margin-bottom: 0.5rem;
 }
+
+.PropertyCardLink {
+  display: block;           
+  text-decoration: none;    
+  color: black; 
+  cursor: default;     
+}
+
 
