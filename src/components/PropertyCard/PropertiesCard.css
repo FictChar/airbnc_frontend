@@ -1,6 +1,6 @@
 .PropertyCard {
-  border: 1px solid white;
-  background-color: #E8C5A6;
+  border: 1px solid #E8C5A6;
+  background-color: white;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
   padding: 16px;
   border-radius: 8px;
@@ -19,6 +19,12 @@
   text-decoration: none;    
   color: black; 
   cursor: default;     
+}
+
+.PropertyCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 

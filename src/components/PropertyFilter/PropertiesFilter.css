@@ -1,26 +1,26 @@
 .PropertiesFilters {
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #665648; 
+  padding: 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .PropertiesFilters select {
-  padding: 8px;
-  border-radius: 20px;
-  border: 2px solid #665648; 
-  background-color: white; 
-  color: #625041;
+  padding: 20px 38px;
+  border-radius: 999px; 
+  border: 2px solid #004225; 
+  background-color: white;
+  color: #004225; 
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  appearance: none; 
 }
 
 .PropertiesFilters select:hover,
 .PropertiesFilters select:focus {
-  border-color: #7b9c95; 
-  background-color: #fff;
+  border-color: #006A4E; 
+  background-color: #F4FFF9; 
   outline: none;
 }
+
 

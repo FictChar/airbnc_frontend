@@ -14,3 +14,5 @@ function PropertiesGrid({ properties }) {
 }
 
 export default PropertiesGrid;
+
+

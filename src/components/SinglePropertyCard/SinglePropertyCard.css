@@ -1,13 +1,15 @@
 .SinglePropertyCard {
   background-color: #F5F5F5;
-  padding: 25px;
-  border-radius: 15px;
-  max-width: 600px;
+  padding: 35px;
+  border-radius: 20px;
+  max-width: 90%; 
+  width: 100%;   
   margin: 40px auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   font-family: Arial, sans-serif;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 
 .SinglePropertyCard:hover {
   transform: translateY(-5px);
@@ -27,9 +29,19 @@
   color: black
 }
 
-.not-found {
-  text-align: center;
-  font-size: 18px;
-  color: black;
-  margin-top: 50px;
+.back-button {
+  background-color: white;      
+  color: #004225;                
+  border: 2px solid #004225;     
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;;
+  margin-top: 15px;
+  font-size: 14px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #004225;    
+  color: white;                  
 }

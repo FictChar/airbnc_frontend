@@ -5,6 +5,7 @@ import { PropertiesFilters } from "./components/PropertyFilter/PropertiesFilters
 import PropertiesGrid from "./components/PropertyGrid/PropertiesGrid";
 import { getProperties } from "../api";
 import SingleProperty from "./components/SinglePropertyCard/SinglePropertyCard";
+import Header from "./components/Header/Header";
 
 function App() {
   const [properties, setProperties] = useState([]);
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <header className="Title">
         <h1>AirBNC</h1>
         <h2>Your next adventure starts here...</h2>
