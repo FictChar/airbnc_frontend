@@ -6,11 +6,13 @@ import PropertiesGrid from "./components/PropertyGrid/PropertiesGrid";
 import { getProperties } from "../api";
 import SingleProperty from "./components/SinglePropertyCard/SinglePropertyCard";
 import Header from "./components/Header/Header";
+import ContactForm from "./components/ContactForm/ContactForm";
 
 function App() {
   const [properties, setProperties] = useState([]);
   const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState({ minPrice: "", maxPrice: "", sort: "" });
+  const [showContactForm, setShowContactForm] = useState(false);
 
   useEffect(() => {
     const fetchProperties = async () => {
@@ -45,7 +47,16 @@ function App() {
         <Route path="/properties/:id" element={<SingleProperty properties={properties} />} />
       </Routes>
 
-      <footer className="ContactForm">Contact us</footer>
+      <footer className="ContactForm">
+        <button
+          className="contact-toggle"
+          onClick={() => setShowContactForm((prev) => !prev)}
+        >
+          Contact us
+        </button>
+
+        {showContactForm && <ContactForm />}
+      </footer>
     </div>
   );
 }
