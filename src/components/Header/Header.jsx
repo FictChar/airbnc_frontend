@@ -4,7 +4,6 @@ function Header() {
   return (
     <div className="header">
       <Logo />
-      <MainMenu />
       <LoginButton />
     </div>
   );
@@ -14,10 +13,6 @@ export default Header;
 
 function Logo() {
   return <img src={logoImage} alt="AIRBNC Logo" className="logo" />;
-}
-
-function MainMenu() {
-  return <div>Filter</div>;
 }
 
 function LoginButton() {

@@ -1,13 +1,18 @@
-.body {
+body {
 margin: 0;
 }
 
 .App {
   background-color: #004225;
   width: 100vw;
-  height: 50vw;
+  height: 50vh;
   text-align: center;
-  padding-top: 7.5vw;
+  padding-top: 7.5vh;
+}
+
+.header {
+  width: 100%;
+  background-color: #004225;
 }
 
 .contact-toggle {
@@ -22,7 +27,7 @@ margin: 0;
 }
 
 .contact-toggle:hover {
-  background-color: #333333;
+  background-color: #004225;
 }
 
 
