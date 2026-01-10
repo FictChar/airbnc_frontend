@@ -11,10 +11,10 @@ function PropertiesCard({ property }) {
           src={property.property_image}
           alt={property.property_name}
         />
-        <h3>{property.property_name}</h3>
+        <h2>{property.property_name}</h2>
         <p>Location: {property.location}</p>
         <p>Price per night: £{property.price_per_night}</p>
-        <p>More...</p>
+        <button type="submit">More...</button>
       </div>
     </Link>
   );
