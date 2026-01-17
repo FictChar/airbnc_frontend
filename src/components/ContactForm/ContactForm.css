@@ -1,6 +1,7 @@
 .contact-form-container {
   width: 90%;
   max-width: 500px;
+  height: 100%;
   margin: 20px auto;
   padding: 30px;
   background-color: white; 
@@ -33,7 +34,7 @@
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: #1b4332;
-  box-shadow: 0 0 5px rgba(27, 67, 50, 0.3);
+  box-shadow: 0 0 5px white (27, 67, 50, 0.3);
   outline: none;
 }
 
@@ -55,5 +56,5 @@
 }
 
 .contact-form button:hover {
-  background-color: #14532d; 
+  background-color: #1b4332;
 }

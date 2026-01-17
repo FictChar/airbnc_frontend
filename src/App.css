@@ -5,9 +5,10 @@ margin: 0;
 .App {
   background-color: #004225;
   width: 100vw;
-  height: 50vh;
+  height: auto;
   text-align: center;
   padding-top: 7.5vh;
+  border: red 2px solid;
 }
 
 .header {
